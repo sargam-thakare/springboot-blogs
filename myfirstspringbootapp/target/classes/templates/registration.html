@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+<div th:replace="fragments/navbar::navbar">
+	</div>
+<div id="content">
+			<div>
+				<div class="card">
+					<div class="row">
+
+						<div class="col-md-6 col-sm-8 col-xs-8 login-form  ">
+							<form    action="/employee/registerUser" method="post">
+
+
+								<br /> <br />
+								<br />
+								<h2 class="text-center">Register</h2>
+								<br />
+								<div class="form-group col">
+									<input    type="text" 
+									class="form-control"
+									 placeholder="Username"
+										id="student" 
+										name="username" 
+										required />
+								</div>
+
+								<br />
+								<div class="form-group col">
+									<input id="user_id"  type="password" class="form-control"
+										placeholder="Password"  
+										name="password" required />
+								</div>
+								<br />
+								<div class="form-group col">
+									<input   type="text" class="form-control"
+										placeholder="email" id="student_pass"
+										name="email" required />
+								</div>
+								<br/>
+								<div class="form-group col">
+									<input  type="text" id="age"  class="form-control"
+										placeholder="age"  
+										name="age" required />
+								</div>
+								<div class="form-group col">
+
+									<input type="submit" class="btn btn-primary btn-block"
+										value="Submit" />
+								</div>
+								<br />
+								<div class="clearfix">
+									<label class="pull-left checkbox-inline"><input
+										type="checkbox" /> Remember me</label>
+								</div>
+							</form>
+					 <button class="btn btn-primary btn-block" type="button" th:onclick="|window.location.href='/employee/login'|">Login</button>
+							
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

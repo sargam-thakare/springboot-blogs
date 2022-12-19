@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link href="../static/css/home.css" th:href="@{/css/home.css}"
+	rel="stylesheet" />
+	
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+ <div id="content">
+
+            <div id="content3">
+                <div class="card">
+                   
+            <div class="container">
+                <h3>Create New blog</h3>
+              <form action="/employee/saveBlog" method="post">
+
+                    <div class="form-group">
+                        <label>Blog Name </label>
+                      
+                        	<input    type="text" 
+									class="form-control"
+									 placeholder="Username"
+										id="blogTitle" 
+										name="blogTitle" 
+										required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <div class="form-group">
+  
+        <textarea class="form-control rounded-0" id="blogDescription" 
+										name="blogDescription"  rows="6"
+   required
+     ></textarea>
+</div>
+<!-- 
+                         <input
+                            type="text" required
+                            class="form-control"
+                            value={this.state.description}
+                            onChange={this.onchangedescription}
+                        />  -->
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <input type="submit" value="Save"   class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+            </div></div></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../static/css/Login.css" th:href="@{/css/Login.css}"
+	rel="stylesheet" />
+	<link href="../static/css/home.css" th:href="@{/css/home.css}"
+	rel="stylesheet" />
+	
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+</head>
+<body>
+<div th:replace="fragments/navbar::navbar">
+	</div>
+	<div>
+	
+		<div id="content">
+			<div>
+				<div class="card">
+					<div class="row">
+
+						<div class="col-md-6 col-sm-8 col-xs-8 login-form  ">
+							<form action="/employee/dashboard" method="post">
+
+
+								<br /> <br />
+								<br />
+								<h2 class="text-center">Login as Student</h2>
+								<br />
+								<div class="form-group col">
+									<input type="text" class="form-control"
+									    placeholder="Username"
+										id="student" 
+										name="username_student" 
+										required />
+								</div>
+
+								<br />
+								<div class="form-group col">
+									<input type="password" class="form-control"
+										placeholder="Password" id="student_pass"
+										name="password_student" required />
+								</div>
+								<br />
+								<div class="form-group col">
+
+									<input type="submit" class="btn btn-primary btn-block"
+										value="Submit" />
+								</div>
+								<br />
+								<div class="clearfix">
+									<label class="pull-left checkbox-inline"><input
+										type="checkbox" /> Remember me</label>
+								</div>
+								
+								<div th:if="${isloggedin != null}" >
+                                 invalid credentials
+									</div>
+							</form>
+								<button class="btn btn-primary btn-block" type="button" th:onclick="|window.location.href='/employee/register'|">Register</button>
+							
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
