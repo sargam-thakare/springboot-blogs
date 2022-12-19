@@ -1,1 +1,34 @@
+# blogs
+
+# MyBlogs
+ 
+
+ 
+ 
+
+Once we log in we can see our blogs in cards .
+We can create new blogs by clicking on Add Blog button
+
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/blogslist.png" alt="signup"></p>
+
+After clicking on add blog button we can see page line this where we can create blogs
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/CreateBlog.png" alt="signup"></p>
+
+All the information is mandatory.After clicking on save blog appear in all blog list
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/CreateNewBlog_Data.png" alt="signup"></p>
+
+We can edit the blog by clciking on Edit button 
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/Edit_Blog.png" alt="signup"></p>
+
+We can view blog in readonly format if we click on readmore link at the end of blog
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/ViewOnlyBlog.png" alt="signup"></p>
+
+We can delete the blog by delete button
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/DeleteBlog.PNG" alt="signup"></p>
+
+ReadMore option is at last of log card
+<p><img src="https://github.com/sargam-thakare/blogs/blob/master/images/ReadMore.PNG" alt="signup"></p>
+
+
+
 
